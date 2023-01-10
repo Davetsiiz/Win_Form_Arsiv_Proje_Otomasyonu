@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02138802-A6B5-4296-8C8A-5F558B65140C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Arsiv_proje</RootNamespace>
+    <AssemblyName>Arsiv_proje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BolaraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BolaraForm.Designer.cs">
+      <DependentUpon>BolaraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoaraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoaraForm.Designer.cs">
+      <DependentUpon>DoaraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvrkDuzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvrkDuzForm.Designer.cs">
+      <DependentUpon>EvrkDuzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlaaraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlaaraForm.Designer.cs">
+      <DependentUpon>KlaaraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rafaraform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rafaraform.Designer.cs">
+      <DependentUpon>Rafaraform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odaaraform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odaaraform.Designer.cs">
+      <DependentUpon>Odaaraform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaDuzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaDuzForm.Designer.cs">
+      <DependentUpon>OdaDuzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BolDuzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BolDuzForm.Designer.cs">
+      <DependentUpon>BolDuzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RafduzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RafduzForm.Designer.cs">
+      <DependentUpon>RafduzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KladuzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KladuzForm.Designer.cs">
+      <DependentUpon>KladuzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DosduzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DosduzForm.Designer.cs">
+      <DependentUpon>DosduzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListData.cs" />
+    <Compile Include="DataConn.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciBilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciBilForm.Designer.cs">
+      <DependentUpon>KullaniciBilForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullGunForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullGunForm.Designer.cs">
+      <DependentUpon>KullGunForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisForm.Designer.cs">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitForm.Designer.cs">
+      <DependentUpon>KayitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DizinTaraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DizinTaraForm.Designer.cs">
+      <DependentUpon>DizinTaraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniEvrakForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniEvrakForm.Designer.cs">
+      <DependentUpon>YeniEvrakForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gana.Designer.cs">
+      <DependentUpon>Gana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvrakAraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvrakAraForm.Designer.cs">
+      <DependentUpon>EvrakAraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvrakEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvrakEkleme.Designer.cs">
+      <DependentUpon>EvrakEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BolaraForm.resx">
+      <DependentUpon>BolaraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoaraForm.resx">
+      <DependentUpon>DoaraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvrkDuzForm.resx">
+      <DependentUpon>EvrkDuzForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlaaraForm.resx">
+      <DependentUpon>KlaaraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rafaraform.resx">
+      <DependentUpon>Rafaraform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odaaraform.resx">
+      <DependentUpon>Odaaraform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaDuzForm.resx">
+      <DependentUpon>OdaDuzForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BolDuzForm.resx">
+      <DependentUpon>BolDuzForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RafduzForm.resx">
+      <DependentUpon>RafduzForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KladuzForm.resx">
+      <DependentUpon>KladuzForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DosduzForm.resx">
+      <DependentUpon>DosduzForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciBilForm.resx">
+      <DependentUpon>KullaniciBilForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullGunForm.resx">
+      <DependentUpon>KullGunForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisForm.resx">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitForm.resx">
+      <DependentUpon>KayitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DizinTaraForm.resx">
+      <DependentUpon>DizinTaraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniEvrakForm.resx">
+      <DependentUpon>YeniEvrakForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gana.resx">
+      <DependentUpon>Gana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvrakAraForm.resx">
+      <DependentUpon>EvrakAraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvrakEkleme.resx">
+      <DependentUpon>EvrakEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
